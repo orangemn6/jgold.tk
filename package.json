@@ -1,10 +1,10 @@
 {
-  "baseUrl": "https://cass.run",
+  "baseUrl": "https://jgold.tk",
   "private": true,
   "scripts": {
     "shorten": "netlify-shortener"
   },
-  "author": "cassidoo",
+  "author": "orangemn6",
   "devDependencies": {
     "netlify-shortener": "^1.0.1"
   }
