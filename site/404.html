@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="shortcut icon" href="favicon.png">
+    <!--meta tags from metatags.io-->
+    <meta name="title" content="Kahoot! Bot">
+    <meta name="description"
+        content="Make up to 150 Kahoot bots to play in your game. Simply type in the game pin, the name of the bot, and how many you want for hours of automated gaming fun!">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Kahoot! Bot">
+    <meta property="og:description"
+        content="Make up to 150 Kahoot bots to play in your game. Simply type in the game pin, the name of the bot, and how many you want for hours of automated gaming fun!">
+    <meta property="og:image"
+        content="favicon.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Kahoot! Bot">
+    <meta property="twitter:description"
+        content="Make up to 150 Kahoot bots to play in your game. Simply type in the game pin, the name of the bot, and how many you want for hours of automated gaming fun!">
+    <meta property="twitter:image"
+        content="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height" />
+    <title>404 - Kahoot Bot Service - totally legit</title>
+    <script>
+        var songs = ["Yes/Run Through The Light", "Yes/Machine Messiah", "lil nas x/old town road", "katy perry/roar", "taylor swift/shake it off","gentle giant/proclamation"]
+        function sendbots() {
+            window.location = "/";
+        }
+        function init() {
+            fetch("https://api.lyrics.ovh/v1/" + songs[Math.floor(
+                (Math.random() * (songs.length - 1)) + 0)])
+                .then(a => a.json())
+                .then(response => {
+                    if(response.lyrics.length < 10){
+                        init()
+                        return
+                    }
+                    var lines = response.lyrics.split("\n")
+                    for (var ii = 0; ii < 2; ii++) {
+                        for (i in lines) {
+                            if (lines[i] == null || lines[i] == "" || lines[i] == undefined || lines[i] == "undefined") {
+                                lines.splice(i, 1)
+                            }
+                        }
+                    }
+                    document.getElementById("legit").innerHTML = lines[Math.floor(
+                        (Math.random() * (lines.length - 1)) + 0)]
+                })
+                return
+        }
+    </script>
+</head>
+
+<body onload="init()">
+    <h1 id="signup">Error 404</h1>
+    <p style="width: 100%; text-align: center; font-family:sans-serif; font-size: 20px; margin-top: -50px;" id="legit">
+    </p>
+    <div class="br"></div>
+    <div class="openbutton" onclick="sendbots()"><span
+            style="vertical-align: middle; display: inline-block; line-height: 50px;">Take Me Home</span></div>
+    <div id="output"></div>
+    <br><br>
+</body>
+
+</html>
