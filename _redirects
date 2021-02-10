@@ -22,6 +22,8 @@
 /duck https://duckduckgo.com  302
  
 /DuckTrue https://duckduckgo.com  302
+ 
+/sitedocaio http://sitedocaio.github.io  302
  #fallback 
  
  
