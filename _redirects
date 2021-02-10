@@ -3,10 +3,16 @@
 /gh          https://github.com/orangemn6
 /mc          https://play.jacobgoldstein.tk
 /beta        https://beta.jacobgoldstein.tk
+/cukmekerb3 https://cukmekerb.github.io/  302
+ 
 
-#fallback
-/*           https://jacobgoldstein.tk
-testcompleteAAAA
- testcomplete AAAA BBBBB AUAUHUAHUIDAI
- testcomplete AAAA BBBBB AUAUHUAHUIDAI
- testcomplete AAAAHHAHAH BBBBB AUAUHUAHUIDAI
+ 
+/redirects https://github.com/orangemn6/jgold.tk/blob/main/_redirects  302
+ 
+/cukmekerbyoutube https://youtube.com/cukmekerbscodingclass  302
+ 
+/shark https://shark.jacobgoldstein.tk/  302
+ #fallback 
+ 
+ 
+/*           https://jgold.tk/site

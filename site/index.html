@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="shortcut icon" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height" />
+    <title>URL SHORTENER</title>
+  
+    <style>
+    body {
+      background-color: black;
+      font-family: sans;
+      z-index: 999;
+    }
+    #particles-js canvas {
+        display: block;
+        vertical-align: bottom;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+        -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+        transition: opacity .8s ease, transform 1.4s ease
+    }
+    
+    #particles-js {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: -10;
+        top: 0;
+        left: 0
+    }
+    
+    </style>
+</head>
+ <div class="snow">
+<body onload="init()">
+    <h1 class="glow" id="signup">JGOLD.TK</h1>
+    <p style="width: 100%; text-align: center; font-family:sans-serif; font-size: 20px; margin-top: -50px;">URL SHORTENER</p>
+    <span class="spnn"></span>
+    <div class="center">
+    <input placeholder="URL" onkeypress="checkinput(event)" id="gamepin">
+    
+	=> <b>jgold.tk/</b>
+    <input placeholder="shortened" onkeypress="checkinput(event)" id="bot_name">
+    <div class="br"></div>
+    <br>
+    <div class="openbutton" onclick="sendbots()"><span
+            style="vertical-align: middle; display: inline-block; line-height: 50px;">Shorten!</span></div>
+    <div id="output"></div>
+    <br><br>
+    <h2 id="over500"></h2>
+    </div>
+</body>
+</div>
+</html>
