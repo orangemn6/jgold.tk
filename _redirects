@@ -18,6 +18,8 @@
 /test http://test.google.com  302
  
 /Duck http://duckduckgo.com  302
+ 
+/duck https://duckduckgo.com  302
  #fallback 
  
  
