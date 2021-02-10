@@ -20,6 +20,8 @@
 /Duck http://duckduckgo.com  302
  
 /duck https://duckduckgo.com  302
+ 
+/DuckTrue https://duckduckgo.com  302
  #fallback 
  
  
