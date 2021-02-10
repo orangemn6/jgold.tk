@@ -16,6 +16,8 @@
 /rick https://www.youtube.com/watch?v=x31tDT-4fQw  302
  
 /test http://test.google.com  302
+ 
+/Duck http://duckduckgo.com  302
  #fallback 
  
  
