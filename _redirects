@@ -64,6 +64,8 @@
 /mox http://moxvallix.com  302
  
 /123 https://urlamrev.herokuapp.com  302
+ 
+/heroku https://urlamrev.herokuapp.com  302
  #fallback 
  
  
